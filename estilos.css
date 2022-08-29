@@ -1,0 +1,546 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: e1e1e1;
+}
+
+/* -----inicio nav------ */
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    height: 70px;
+    width: 100%;
+    background-color: greenyellow;
+    position: fixed;
+}
+
+.logoImagen img {
+    width: 50px;
+    height: 50px;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.logoImagen img:hover {
+    transform: scaleY(1.1);
+    animation-duration: 0.5s;
+}
+
+.lista {
+    display: flex;
+    margin-right: 0px;
+    padding: 0;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+}
+
+
+.lista > li > a {
+    display: flex;
+    padding: 10px;
+    color: royalblue;
+    text-decoration: none;
+    font-family: "DynaPuff", cursive;
+}
+
+.lista > li > a:hover {
+    color: rgb(3, 3, 3);
+}
+
+.listarazas {
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 200px;
+    background-color: greenyellow;
+}
+
+.lista > li:hover .listarazas {
+    display: block;
+}
+
+.listarazas li a {
+    display: block;
+    color: royalblue;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;
+    font-family: "DynaPuff", cursive;
+}
+
+.listarazas li a:hover {
+    color: rgb(0, 0, 0);
+}
+
+
+/* -----Inicio home------ */
+#home {
+    display: flex;
+    background: url(/assets/perro-con-orejas.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.textHome {
+    padding: 50px;
+}
+
+.titleHome {
+        height: 200px;
+        margin-right: 5rem auto;
+        width: 500px ;
+        font-family: "DynaPuff", cursive;
+        font-size: 40px;
+        color: #1a1a1a;
+        font-weight: 100;
+        text-align: center;
+    }
+
+.subtitleHome {
+
+    height: 300px;
+    margin: 2rem auto;
+    width: 500px ;
+    font-family: "DynaPuff", cursive;
+    font-size: 20px;
+    color: #141414;
+    font-weight: 100;
+    text-align: center;;
+}
+
+/* ---- Inicio section Servicios  --- */
+
+#servicios {
+    padding: 10%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.titleServicios {
+    height: 200px;
+    width: 500px;
+    margin: auto ;
+    font-family: "DynaPuff", cursive;
+    font-size: 48px;
+    text-align: flex-start;
+    color: #0a0a0a;
+}
+
+.subtitleServicios {
+    font-family: "DynaPuff", cursive;
+    text-align: flex-start;
+    font-size: 15px;
+    margin: auto;
+    color: #4e4e4e;
+}
+
+img{
+    width: 500px;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+}
+/* ---- Inicio section peligrosas --- */
+
+#peligrosas {
+    width: 100%;
+    height: 100%;
+    font-family: 'DynaPuff' cursive;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-color: rgb(147, 216, 193);
+}
+
+.titleDanger {
+    text-align: center;
+    margin-top: 100px;
+    font-family: "DynaPuff", cursive;
+    font-size: 40px;
+    color: #5c5c5c;
+    font-weight: 100;
+}
+
+.cardsPeligrosas {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    margin: auto;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardsPeligrosas .card {
+    width: 330px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color:rgba(66, 209, 78, 0.2);
+}
+
+.cardsPeligrosas .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardsPeligrosas .card img {
+    width: 330px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+.cardsPeligrosas .card h2{
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+.cardsPeligrosas .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cardsPeligrosas .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #313131;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cardsPeligrosas .card a:hover{
+    color: black;
+}
+
+/* ---- Inicio section tranquilos  --- */
+
+#tranquilos {  
+    padding: 10%;
+    margin: 20px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;  
+}
+
+
+.cardTranquilos {
+    width: 900px;
+    height: 700px;
+    border-radius: 20px;
+    background-color: rgba(66, 209, 78, 0.2);
+    height: 430px;
+    margin: auto;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardTranquilos .card {
+    width: 300px;
+    height: 150px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color:rgba(66, 209, 78, 0.2);
+}
+
+.cardTranquilos .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardTranquilos .card img {
+    width: 330px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+
+.titleTranquilos {
+    margin: 20px;
+    font-family: "DynaPuff", cursive;
+    font-size: 28px;
+    text-align: center;
+    color: #242424;
+}
+
+.subtitleTranquilos {
+    width: 70%;
+    font-family: "DynaPuff", cursive;
+    text-align: flex-start;
+    font-size: 15px;
+    margin: auto;
+    color: #242323;
+}
+
+
+/* ---- Inicio section Grandes  --- */
+
+#grandes {
+    padding: 10%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2ca3b3;
+}
+
+.titleGrandes {
+    height: 200px;
+    width: 500px;
+    margin: auto ;
+    font-family: "DynaPuff", cursive;
+    font-size: 48px;
+    text-align: flex-start;
+    color: #ffffff;
+}
+
+.subtitleGrandes {
+    font-family: "DynaPuff", cursive;
+    text-align: flex-start;
+    font-size: 20px;
+    margin: auto;
+    color: #c9c9c9;
+}
+
+#grandes img{
+    width: 500px;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* ---- Inicio section Medianos  --- */
+
+
+#medianas {
+    padding: 10%;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #2ca3b3;
+}
+
+.titleMedianas {
+    height: 150px;
+    width: 500px;
+    margin: auto ;
+    font-family: "DynaPuff", cursive;
+    font-size: 48px;
+    text-align: flex-start;
+    color: #ffffff;
+}
+
+.subtitleMedianas {
+    font-family: "DynaPuff", cursive;
+    text-align: flex-start;
+    font-size: 20px;
+    margin: auto;
+    color: #c9c9c9;
+}
+
+#medianas img{
+    width: 500px;
+    height: auto;
+    margin: 20px;
+    border-radius: 20px;
+}
+
+/* ---- Inicio section Pequeñas  --- */
+
+
+#pequeñas {
+    width: 100%;
+    height: 100%;
+    font-family: 'DynaPuff' cursive;
+    letter-spacing: 0.03em;
+    line-height: 1.6;
+    background-color: e1e1e1(147, 216, 193);
+}
+
+.titlePequeñas {
+    text-align: center;
+    margin-top: 100px;
+    font-family: "DynaPuff", cursive;
+    font-size: 40px;
+    color: #5c5c5c;
+    font-weight: 100;
+}
+
+.cardsPequeñas {
+    width: 100%;
+    max-width: 1200px;
+    height: 430px;
+    margin: auto;
+    display: flex;  
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cardsPequeñas .card {
+    width: 330px;
+    height: 500px;
+    border-radius: 8px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    margin: 20px;
+    text-align: center;
+    transition: all 0.25s;
+    background-color:rgba(79, 255, 173, 0.719);
+}
+
+.cardsPequeñas .card:hover {
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px rgba(0, 0, 0, 0.2);
+}
+
+.cardsPequeñas .card img {
+    width: 330px;
+    height: 220px;
+    border-radius: 8px;
+}
+
+.cardsPequeñas .card h2{
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace ;
+}
+
+.cardsPequeñas .card p{
+    padding: 0 1rem;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.cardsPequeñas .card a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #313131;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.cardsPequeñas .card a:hover{
+    color: black;
+}
+
+/* ---- Inicio section Contacto  --- */
+
+#contactanos {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+
+
+.textoContacto {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    font-family: "DynaPuff", cursive;
+    font-size: 30px;
+    color: #5c5c5c;
+    font-weight: 100;
+}
+
+form {
+  margin: 0 auto;
+  width: 400px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+
+input,
+textarea {
+  width: 480px;
+  height: 27px;
+  background: #ffffff;
+  border: 2px solid #f6f6f6;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 10px;
+  color: #000000;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+textarea {
+  height: 150px;
+}
+
+#submit {
+  width: 85px;
+  height: 35px;
+  border: none;
+  margin: 20px;
+  cursor: pointer;
+}
+
+/* ---- Inicio section Footer  --- */
+
+#footer{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    background-color: #141414;
+}
+.site-footer
+{
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+.site-footer hr.small
+{
+  margin:20px 0
+}
+.site-footer h6
+{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a
+{
+  color:#737373;
+}
+.site-footer a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+.footer-links
+{
+  padding-left:0;
+  list-style:none
+}
+.footer-links li
+{
+  display:block
+}
+.footer-links a
+{
+  color:#737373
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+  color:#3366cc;
+  text-decoration:none;
+}
+
